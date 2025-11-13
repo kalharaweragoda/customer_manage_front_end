@@ -31,3 +31,6 @@ function loadCustomer() {
       customerTable.innerHTML = tableRow;
     });
 }
+
+
+
