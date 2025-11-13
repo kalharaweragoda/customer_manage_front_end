@@ -17,7 +17,7 @@ function loadCustomer() {
 
       let customerTable = document.getElementById("tblCustomers");
 
-      data.forEach(customer => {
+      data.forEach((customer) => {
         tableRow += `        
         <tr>
             <td>${customer.id}</td>
@@ -31,6 +31,5 @@ function loadCustomer() {
       customerTable.innerHTML = tableRow;
     });
 }
-
 
 
