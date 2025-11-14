@@ -12,16 +12,15 @@ function addCustomer() {
   myHeaders.append("Content-Type", "application/json");
 
   const raw = JSON.stringify({
-    name: name,
-    address: address,
-    salary: salary
+    "name": name,
+    "address": address,
+    "salary": salary
   });
 
   const requestOptions = {
     method: "POST",
     headers: myHeaders,
     body: raw,
-    redirect: "follow",
   };
 
   fetch("http://localhost:8080/customer/add", requestOptions)
